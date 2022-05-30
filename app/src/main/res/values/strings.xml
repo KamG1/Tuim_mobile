@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Tuim</string>
+    <string name="TextToLogIn">Zaloguj się</string>
+    <string name="logging">Logowanie</string>
+    <string name="registering">Rejstracja</string>
+    <string name="logInAndConfirm">Zaloguj się i potwierdz</string>
+    <string name="give_login">Login</string>
+    <string name="give_password">Haslo</string>
+    <string name="Confirm">Potwierdz</string>
+    <string name="main_menu">Menu głowne</string>
+    <string name="your_points">Twoje punkty</string>
+    <string name="new_gps">Znajdz stacje benzynowa</string>
+    <string name="new_tank">Nowa stacja</string>
+    <string name="new_car">Nowy samochód</string>
+    <string name="new_repair">Ustawienia</string>
+
 </resources>
