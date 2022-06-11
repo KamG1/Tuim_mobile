@@ -10,4 +10,6 @@
     <color name="grey">#cccccc</color>
     <color name="amber_30">#D3CAB0</color>
     <color name="amber_50">#FFE082</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#FF9800</color>
 </resources>

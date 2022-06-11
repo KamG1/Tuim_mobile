@@ -23,10 +23,6 @@ public class StartActivity extends AppCompatActivity {
     public static final String USER_DATA = "USER_DATA";
     public static ArrayList<UserData> userList;
 
-    private Button goToRegisterButton;
-    private Button goToLogInButton;
-    private TextView isLoggedText;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,10 +31,9 @@ public class StartActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        goToRegisterButton = findViewById(R.id.registering);
-        goToLogInButton = findViewById(R.id.logging);
+        Button goToRegisterButton = findViewById(R.id.registering);
+        Button goToLogInButton = findViewById(R.id.logging);
 
-        isLoggedText = findViewById(R.id.textViewIsLoggedInMenu);
         initUserList();
 
         goToRegisterButton.setOnClickListener(goToRegisterActivity());
@@ -65,7 +60,6 @@ public class StartActivity extends AppCompatActivity {
         if (requestCode == REQUEST_CODE_REGISTER) {
             if (resultCode == Activity.RESULT_OK) {
                 if (data != null) {
-                    //dołączyc RegisterActivity
                     UserData newUserData = (UserData) data.getExtras().get(RegisteringActivity.NEW_USER_DATA);
                 }
             }
@@ -74,7 +68,6 @@ public class StartActivity extends AppCompatActivity {
             if (resultCode == Activity.RESULT_OK) {
                 if (data != null) {
                     Intent intent = new Intent(StartActivity.this, MainMenuActivity.class);
-                    //dołączyc LoginActivity
                     UserData user = (UserData) data.getExtras().get(LogInActivity.USER);
                     intent.putExtra(USER_DATA, user);
                     startActivity(intent);
@@ -84,6 +77,6 @@ public class StartActivity extends AppCompatActivity {
     }
 
     private void initUserList() {
-        userList = new ArrayList<UserData>();
+        userList = new ArrayList<>();
     }
 }

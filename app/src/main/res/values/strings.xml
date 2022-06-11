@@ -13,5 +13,27 @@
     <string name="new_tank">Nowa stacja</string>
     <string name="new_car">Nowy samochód</string>
     <string name="new_repair">Ustawienia</string>
+    <string name="log_in_form">Logowanie</string>
+    <string name="enter_login">Wprowadz login</string>
+    <string name="enter_password">Wprowadz haslo</string>
+    <string name="login_or_passworrd_not_correct">Bledny login lub haslo</string>
+    <string name="error_connection_with_server">Blad polaczenia z serwerem</string>
+    <string name="register_form">Rejestracja</string>
+    <string name="error">Blad!</string>
+    <string name="you_have_to_accept_regulations">Akceptacja regulamianu jest wymagana</string>
+    <string name="checkboxRegulations">Zatwierdzono</string>
+    <string name="phone_number_is_necessary">Numer terlefonu jest wymagany</string>
+    <string name="phone_number_only_nine_numbers">Numer telefonu wymaga 9 cyfr</string>
+    <string name="give_phone_number">Podaj numer telefonu</string>
+    <string name="email_is_necessary">Email jest wymagany</string>
+    <string name="false_email">Niepoprawny mail</string>
+    <string name="give_email">Podaj email</string>
+    <string name="must_repeat_password">Prosze powtorzyc haslo</string>
+    <string name="password_dont_match">Brak zgodanosci hasla</string>
+    <string name="repeat_password">Powtorz haslo</string>
+    <string name="password_is_necessary">Haslo jest wymagane</string>
+    <string name="password_eight_signs_leter_number_special">Haslo musi zawierac coanajmniej 8 znaków, w tym znak specjalny litere i cyfre</string>
+    <string name="login_is_necessary">Login jest wymagany</string>
+    <string name="login_must_more_than_three_signs">Login musi zawiwerac wiecej niz 3 znaki</string>
 
 </resources>
