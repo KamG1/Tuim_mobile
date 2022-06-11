@@ -81,4 +81,8 @@ public class UserData implements Serializable {
         autoList.add(0, auto);
         return autoList;
     }
+
+    public void setAutoArray(ArrayList<AutoData> autoArray) {
+        autoList = autoArray;
+    }
 }

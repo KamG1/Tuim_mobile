@@ -68,5 +68,12 @@
     <string name="millage">Przebieg</string>
     <string name="liters">Litry</string>
     <string name="cost">Koszt</string>
+    <string name="enter_p95">Wprowadz P95</string>
+    <string name="p95_not_minus">Nie moze byc wartosc ujemna</string>
+    <string name="enter_on">Wprowadz ON</string>
+    <string name="on_not_minus">Nie moze byc wartosc ujemna</string>
+    <string name="enter_lpg">Wprowadz LPG</string>
+    <string name="lpg_not_minus">Nie moze byc watosc ujemna</string>
+    <string name="you_get_ten_points">Dostajesz punkty</string>
 
 </resources>

@@ -23,6 +23,9 @@
         <activity android:name=".car.AddCarActivity" />
         <activity android:name=".user.RegisteringActivity" />
         <activity android:name=".user.LogInActivity" />
+        <activity android:name=".station.GpsActivity" />
+        <activity android:name=".station.EditStationActivity" />
+        <activity android:name=".tanks.TankUpActivity" />
     </application>
 
 </manifest>
