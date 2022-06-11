@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/go_to_gps"
+            android:title="@string/new_gps"
+            android:icon="@drawable/ic_gps"/>
+
+        <item android:id="@+id/go_to_tank_form"
+            android:title="@string/new_tank"
+            android:icon="@drawable/ic_tank"/>
+
+        <item android:id="@+id/new_car"
+            android:title="@string/new_car"
+            android:icon="@drawable/ic_new_car"/>
+
+        <item android:id="@+id/go_to_repair"
+            android:title="@string/new_repair"
+            android:icon="@drawable/ic_settings"/>
+
+
+
+        <View
+            android:layout_width="56dp"
+            android:layout_height="1dp"
+            android:layout_margin="16dp"
+            android:background="?android:attr/textColorPrimary" />
+
+
+    </group>
+
+</menu>
