@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.tuim.ClientAPI;
 import com.example.tuim.R;
 import com.example.tuim.RetrofitClient;
+import com.example.tuim.car.AutoData;
 
 import java.net.URLEncoder;
 import java.util.ArrayList;
@@ -90,6 +91,7 @@ public class LogInActivity extends AppCompatActivity {
                     logInAndConfirmLabel.setTextColor(getResources().getColor(R.color.red));
                 } else {
                     Intent intent = new Intent();
+                    setMainAutoFirst();
                     intent.putExtra(USER, theUser);
                     setResult(Activity.RESULT_OK, intent);
                     finish();
@@ -102,5 +104,18 @@ public class LogInActivity extends AppCompatActivity {
             }
         });
         return theUser != null && passwordEditText.getText().toString().equals(theUser.getPassword());
+    }
+
+    private void setMainAutoFirst() {
+        AutoData auto = null;
+        for (AutoData i : theUser.getAutoList()) {
+            if (i.isIsmain()) {
+                auto = i;
+            }
+        }
+        if (auto != null) {
+            theUser.getAutoList().remove(auto);
+            theUser.getAutoList().add(0, auto);
+        }
     }
 }

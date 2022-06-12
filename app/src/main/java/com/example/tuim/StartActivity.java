@@ -23,6 +23,10 @@ public class StartActivity extends AppCompatActivity {
     public static final String USER_DATA = "USER_DATA";
     public static ArrayList<UserData> userList;
 
+    private Button goToRegisterButton;
+    private Button goToLogInButton;
+    private TextView isLoggedText;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,9 +35,10 @@ public class StartActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        Button goToRegisterButton = findViewById(R.id.registering);
-        Button goToLogInButton = findViewById(R.id.logging);
+        goToRegisterButton = findViewById(R.id.registering);
+        goToLogInButton = findViewById(R.id.logging);
 
+        isLoggedText = findViewById(R.id.textViewIsLoggedInMenu);
         initUserList();
 
         goToRegisterButton.setOnClickListener(goToRegisterActivity());
@@ -77,6 +82,6 @@ public class StartActivity extends AppCompatActivity {
     }
 
     private void initUserList() {
-        userList = new ArrayList<>();
+        userList = new ArrayList<UserData>();
     }
 }

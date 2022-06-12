@@ -75,5 +75,12 @@
     <string name="enter_lpg">Wprowadz LPG</string>
     <string name="lpg_not_minus">Nie moze byc watosc ujemna</string>
     <string name="you_get_ten_points">Dostajesz punkty</string>
-
+    <string name="current_speed">Aktualna predkosc</string>
+    <string name="last_best">Rekord</string>
+    <string name="seconds">sekund</string>
+    <string name="km_per_h">km na h</string>
+    <string name="start_measurement">Rozpocznij pomiar</string>
+    <string name="record_of_speed">Rekord szybkosci</string>
+    <string name="Current_speed">Aktualna predkosc</string>
+    <string name="google_maps_key">AIzaSyBKI2vWqQWkoADnfTSAyctOlrKM34x13iU</string>
 </resources>

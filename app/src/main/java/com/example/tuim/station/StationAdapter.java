@@ -84,6 +84,13 @@ public class StationAdapter extends androidx.recyclerview.widget.RecyclerView.Ad
             intent.putExtra(USER, user);
             context.startActivity(intent);
         });
+        holder.chooseStationButton.setOnClickListener(v -> {
+            Intent intent = new Intent(context, MapActivity.class);
+            intent.putExtra(STATION_RECORD, stationList.get(position));
+            intent.putExtra(FIRST_CO, firstCoordinatePerson);
+            intent.putExtra(SECOND_CO, secondCoordinatePerson);
+            context.startActivity(intent);
+        });
     }
 
     @Override
