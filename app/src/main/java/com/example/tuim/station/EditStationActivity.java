@@ -26,6 +26,7 @@ import com.example.tuim.R;
 import com.example.tuim.RetrofitClient;
 import com.example.tuim.user.UserData;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -54,6 +55,15 @@ public class EditStationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FirebaseMessaging.getInstance().getToken()
+                .addOnCompleteListener(task -> {
+                    if (!task.isSuccessful()) {
+                        Log.w("TAG", "Fetching FCM registration token failed", task.getException());
+                        return;
+                    }
+                    token = task.getResult();
+                    Log.d("TAG", "token: " + token);
+                });
         stationData = (StationRecord) getIntent().getExtras().getSerializable(StationAdapter.STATION_RECORD);
         user = (UserData) getIntent().getExtras().getSerializable(StationAdapter.USER);
         setContentView(R.layout.edit_station_layout);

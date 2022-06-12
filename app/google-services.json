@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "964188882941",
+    "project_id": "tuim-4ef73",
+    "storage_bucket": "tuim-4ef73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964188882941:android:94ae197d4c94ba1db07b94",
+        "android_client_info": {
+          "package_name": "com.example.tuim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "964188882941-tvrgp7pjse1m0blh4bc5fd7l35jedpqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4HwPtLT5wlCkWHrLFQ47yDQ9gkacb9GU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "964188882941-tvrgp7pjse1m0blh4bc5fd7l35jedpqp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
