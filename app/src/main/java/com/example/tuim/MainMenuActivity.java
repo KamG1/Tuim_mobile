@@ -26,6 +26,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.tuim.car.AddCarActivity;
 import com.example.tuim.car.AutoData;
+import com.example.tuim.station.AddStationActivity;
 import com.example.tuim.station.EditStationActivity;
 import com.example.tuim.station.GpsActivity;
 import com.example.tuim.tanks.TankHistoryAdapter;
@@ -162,6 +163,11 @@ public class MainMenuActivity  extends AppCompatActivity implements NavigationVi
         startActivity(intent);
 
     }
+    private void goToNewStationActivity() {
+        Intent intent = new Intent(MainMenuActivity.this, AddStationActivity.class);
+        startActivity(intent);
+
+    }
 
 
     @Override
@@ -243,7 +249,7 @@ public class MainMenuActivity  extends AppCompatActivity implements NavigationVi
                 goToNewCarActivity();
                 break;
             case R.id.go_to_repair:
-                //prawdopodobnie nic nie bedzie
+                goToNewStationActivity();
                 break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);

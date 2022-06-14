@@ -10,9 +10,9 @@
     <string name="main_menu">Menu głowne</string>
     <string name="your_points">Twoje punkty</string>
     <string name="new_gps">Znajdz stacje benzynowa</string>
-    <string name="new_tank">Nowa stacja</string>
+    <string name="new_tank">Nowe tankowanie</string>
     <string name="new_car">Nowy samochód</string>
-    <string name="new_repair">Ustawienia</string>
+    <string name="new_repair">Nowa stacja benzynowa</string>
     <string name="log_in_form">Logowanie</string>
     <string name="enter_login">Wprowadz login</string>
     <string name="enter_password">Wprowadz haslo</string>
@@ -83,4 +83,12 @@
     <string name="record_of_speed">Rekord szybkosci</string>
     <string name="Current_speed">Aktualna predkosc</string>
     <string name="google_maps_key">AIzaSyBKI2vWqQWkoADnfTSAyctOlrKM34x13iU</string>
+    <string name="station_add_form">Dodawanie nowej stacji</string>
+    <string name="enter_lat">Wprowadz dlugosc geograficzna!</string>
+    <string name="lat">Dlugosc geograficzna</string>
+    <string name="enter_lan">Wprowadz szerokosc geograficzna!</string>
+    <string name="lan">Szerokosc geograficzna</string>
+    <string name="name_is_necessary">Nazwa stacji jest wymagana</string>
+    <string name="name_must_more_than_one_sign">Nazwa powinna zawierac powyzej jednego znaku</string>
+    <string name="give_name">Nazwa stacji</string>
 </resources>

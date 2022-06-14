@@ -34,6 +34,7 @@
         <activity android:name=".station.EditStationActivity" />
         <activity android:name=".tanks.TankUpActivity" />
         <activity android:name=".station.MapActivity" />
+        <activity android:name=".station.AddStationActivity" />
         <service
             android:name=".MyFirebaseMessagingService"
             android:exported="false"
